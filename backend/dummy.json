@@ -1,0 +1,424 @@
+{
+  "users": [
+    {
+      "username": "alice",
+      "password": "alice123"
+    },
+    {
+      "username": "bob",
+      "password": "bobSecure456"
+    },
+    {
+      "username": "charlie",
+      "password": "charlie789"
+    }
+  ],
+  "products": [
+    {
+    "id": 1,
+    "name": "Wireless Earbuds",
+    "price": 69.99,
+    "inStock": false,
+    "rating": 4.5,
+    "image": "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8V2lyZWxlc3MlMjBFYXJidWRzfGVufDB8fDB8fHww",
+    "description": "True wireless earbuds with active noise cancellation and crystal clear call quality.",
+    "specs": {
+      "ANC": "Yes",
+      "Battery Life": "6h (24h with case)",
+      "Bluetooth": "5.2",
+      "Waterproof": "IPX5",
+      "Weight": "5g per earbud"
+    },
+    "availability": "Restocking 2023-12-10",
+    "tags": [
+      "Best Seller"
+    ],
+    "features": [
+      "Touch controls",
+      "Fast charging",
+      "Wireless charging case",
+      "Transparency mode"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Gaming Chair",
+    "price": 249.00,
+    "inStock": true,
+    "rating": 4.6,
+    "image": "https://plus.unsplash.com/premium_photo-1678112179122-50605ebc5697?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8R2FtaW5nJTIwQ2hhaXJ8ZW58MHx8MHx8fDA%3D",
+    "description": "Ergonomic gaming chair with lumbar support and adjustable armrests for long sessions.",
+    "specs": {
+      "Material": "PU leather",
+      "Frame": "Metal",
+      "Max Weight": "150kg",
+      "Adjustments": "Height, tilt, armrests",
+      "Warranty": "2 years"
+    },
+    "availability": "In stock, ships within 48 hours",
+    "tags": [],
+    "features": [
+      "360° swivel",
+      "Reclining backrest",
+      "Removable headrest",
+      "Smooth-rolling casters"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Graphics Tablet",
+    "price": 89.90,
+    "inStock": true,
+    "rating": 4.4,
+    "image": "https://images.unsplash.com/photo-1572532350840-f682a3cf9dc2?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "description": "Pressure-sensitive drawing tablet perfect for digital artists and designers.",
+    "specs": {
+      "Active Area": "10x6 inches",
+      "Pressure Levels": "8192",
+      "Resolution": "5080 LPI",
+      "Report Rate": "200 RPS",
+      "Pen": "Battery-free"
+    },
+    "availability": "In stock, ships same day",
+    "tags": [
+      "Limited Stock"
+    ],
+    "features": [
+      "8 shortcut keys",
+      "Paper-like texture",
+      "Compatible with major software",
+      "USB connection"
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Wireless Headphones",
+    "price": 59.99,
+    "inStock": true,
+    "rating": 4.5,
+    "image": "https://plus.unsplash.com/premium_photo-1679513691474-73102089c117?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8aGVhZHBob25lfGVufDB8fDB8fHww",
+    "description": "Noise-canceling wireless headphones with deep bass, long battery life, and comfortable ear cushions—perfect for travel or work.",
+    "specs": {
+      "Connectivity": "Bluetooth 5.2",
+      "Battery Life": "30 hours",
+      "Charging": "USB-C Fast Charging",
+      "Weight": "250g",
+      "Dimensions": "18 x 15 x 7.5 cm"
+    },
+    "availability": "In stock, ships within 24 hours",
+    "tags": [
+      "Trending",
+      "Top Rated"
+    ],
+    "features": [
+      "Noise Cancellation",
+      "Deep Bass",
+      "Foldable Design",
+      "Touch Controls"
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Wireless Mouse",
+    "price": 25.99,
+    "inStock": true,
+    "rating": 4.2,
+    "image": "https://images.unsplash.com/photo-1660491083562-d91a64d6ea9c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8V2lyZWxlc3MlMjBNb3VzZXxlbnwwfHwwfHx8MA%3D%3D",
+    "description": "Ergonomic wireless mouse with silent clicks and precise tracking. Perfect for both work and gaming.",
+    "specs": {
+      "Connectivity": "Bluetooth 5.0",
+      "DPI": "1600",
+      "Battery Life": "12 months",
+      "Weight": "85g",
+      "Dimensions": "10.5 x 6 x 3.5 cm"
+    },
+    "availability": "In stock, ships within 24 hours",
+    "tags": [
+      "Best Seller",
+      "Limited Stock"
+    ],
+    "features": [
+      "Silent clicks",
+      "Ergonomic design",
+      "Long battery life",
+      "Plug-and-play"
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Mechanical Keyboard",
+    "price": 79.99,
+    "inStock": true,
+    "rating": 4.5,
+    "image": "https://plus.unsplash.com/premium_photo-1664194583917-b0ba07c4ce2a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8TWVjaGFuaWNhbCUyMEtleWJvYXJkfGVufDB8fDB8fHww",
+    "description": "RGB backlit mechanical keyboard with customizable keys and tactile feedback for gamers and typists.",
+    "specs": {
+      "Switch Type": "Cherry MX Red",
+      "Backlight": "RGB",
+      "Keycaps": "Double-shot PBT",
+      "Connectivity": "USB wired",
+      "Weight": "1.2kg"
+    },
+    "availability": "In stock, ships within 48 hours",
+    "tags": [
+      "Best Seller"
+    ],
+    "features": [
+      "N-key rollover",
+      "Detachable USB-C cable",
+      "Adjustable feet",
+      "Anti-ghosting"
+    ]
+  },
+  {
+    "id": 7,
+    "name": "27\" Monitor",
+    "price": 199.99,
+    "inStock": false,
+    "rating": 4.3,
+    "image": "https://plus.unsplash.com/premium_photo-1681816189679-fa02d1acd1de?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8TW9uaXRvcnxlbnwwfHwwfHx8MA%3D%3D",
+    "description": "Ultra-slim bezel IPS monitor with stunning color accuracy and wide viewing angles.",
+    "specs": {
+      "Panel Type": "IPS",
+      "Resolution": "2560x1440 (QHD)",
+      "Refresh Rate": "75Hz",
+      "Response Time": "5ms",
+      "Ports": "2x HDMI, 1x DisplayPort"
+    },
+    "availability": "Backordered, expected 2023-12-15",
+    "tags": [],
+    "features": [
+      "VESA mount compatible",
+      "Blue light filter",
+      "Flicker-free",
+      "Height adjustable"
+    ]
+  },
+  {
+    "id": 8,
+    "name": "USB-C Hub",
+    "price": 34.50,
+    "inStock": true,
+    "rating": 4.1,
+    "image": "https://media.istockphoto.com/id/2193619822/photo/usb-type-c-hub-isolated-on-white-background.webp?a=1&b=1&s=612x612&w=0&k=20&c=6K3oiS-fn46UCN0nFnV6CzALI5qJ1Of2Up7r9lGMUeo=",
+    "description": "Expand your laptop's connectivity with this compact USB-C hub featuring multiple ports.",
+    "specs": {
+      "Ports": "USB-C PD, 2x USB 3.0, HDMI, SD/TF card reader",
+      "Data Transfer": "5Gbps",
+      "Power Delivery": "100W",
+      "Dimensions": "8 x 3 x 1 cm",
+      "Compatibility": "Mac, Windows, ChromeOS"
+    },
+    "availability": "In stock, ships same day",
+    "tags": [
+      "Limited Stock"
+    ],
+    "features": [
+      "Plug-and-play",
+      "Sleek aluminum design",
+      "4K HDMI output",
+      "No drivers needed"
+    ]
+  },
+  {
+    "id": 9,
+    "name": "Laptop Stand",
+    "price": 45.00,
+    "inStock": true,
+    "rating": 4.0,
+    "image": "https://images.unsplash.com/photo-1629893250402-bc171e8bbe4e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fExhcHRvcCUyMFN0YW5kfGVufDB8fDB8fHww",
+    "description": "Adjustable aluminum stand that elevates your laptop for better ergonomics and cooling.",
+    "specs": {
+      "Material": "Aircraft-grade aluminum",
+      "Adjustable Height": "6 levels",
+      "Max Load": "5kg",
+      "Compatibility": "10-17\" laptops",
+      "Weight": "450g"
+    },
+    "availability": "In stock, ships within 24 hours",
+    "tags": [],
+    "features": [
+      "Non-slip surface",
+      "Foldable design",
+      "Improved airflow",
+      "360° rotatable"
+    ]
+  },
+  {
+    "id": 10,
+    "name": "Noise-Cancelling Headphones",
+    "price": 129.99,
+    "inStock": false,
+    "rating": 4.6,
+    "image": "https://images.unsplash.com/photo-1612478120679-5b7412e15f84?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Tm9pc2UlMjBDYW5jZWxsaW5nJTIwSGVhZHBob25lc3xlbnwwfHwwfHx8MA%3D%3D",
+    "description": "Premium over-ear headphones with active noise cancellation for immersive audio experience.",
+    "specs": {
+      "ANC": "Yes",
+      "Battery Life": "30 hours",
+      "Bluetooth": "5.0",
+      "Weight": "255g",
+      "Microphone": "Built-in"
+    },
+    "availability": "Discontinued",
+    "tags": [],
+    "features": [
+      "Hi-Res audio",
+      "Touch controls",
+      "Fast charging",
+      "Foldable design"
+    ]
+  },
+  {
+    "id": 11,
+    "name": "Webcam 1080p",
+    "price": 59.99,
+    "inStock": true,
+    "rating": 3.9,
+    "image": "https://plus.unsplash.com/premium_photo-1710961233810-5350d81d4b20?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8V2ViY2FtJTIwMTA4MHxlbnwwfHwwfHx8MA%3D%3D",
+    "description": "Full HD webcam with autofocus and built-in microphone for crystal-clear video calls.",
+    "specs": {
+      "Resolution": "1080p at 30fps",
+      "Focus": "Auto",
+      "Microphone": "Omnidirectional",
+      "Mount": "Universal clip",
+      "Field of View": "78°"
+    },
+    "availability": "In stock, ships same day",
+    "tags": [
+      "Best Seller"
+    ],
+    "features": [
+      "Privacy cover",
+      "Low-light correction",
+      "Plug-and-play",
+      "Tripod ready"
+    ]
+  },
+  {
+    "id": 12,
+    "name": "External SSD 1TB",
+    "price": 119.95,
+    "inStock": true,
+    "rating": 4.4,
+    "image": "https://media.istockphoto.com/id/1359534143/photo/external-hard-drive-with-data-cable-on-white-background.webp?a=1&b=1&s=612x612&w=0&k=20&c=2DRYL66epZJ3e_4WNBQvQUtvG8HKPluDh3_Wdnufebg=",
+    "description": "Lightning-fast portable SSD with rugged design for professionals on the go.",
+    "specs": {
+      "Capacity": "1TB",
+      "Interface": "USB 3.2 Gen 2",
+      "Speed": "1050MB/s read, 1000MB/s write",
+      "Durability": "IP55 water/dust resistant",
+      "Weight": "45g"
+    },
+    "availability": "In stock, ships within 24 hours",
+    "tags": [
+      "Limited Stock"
+    ],
+    "features": [
+      "Shock resistant",
+      "Hardware encryption",
+      "5-year warranty",
+      "Compact design"
+    ]
+  },
+  {
+    "id": 13,
+    "name": "Smartphone Tripod",
+    "price": 19.99,
+    "inStock": true,
+    "rating": 4.0,
+    "image": "https://media.istockphoto.com/id/1272455037/photo/mobile-phone-on-a-stabilizer.webp?a=1&b=1&s=612x612&w=0&k=20&c=Wx5hUSi2jt7j1tYaa57lI_N8JcVwlnkziAoRMBu4B_Q=",
+    "description": "Compact and flexible tripod with Bluetooth remote for perfect smartphone shots.",
+    "specs": {
+      "Height": "15-50cm adjustable",
+      "Phone Mount": "Universal (fits 4-7\" phones)",
+      "Bluetooth Remote": "Yes",
+      "Legs": "Flexible",
+      "Weight": "180g"
+    },
+    "availability": "In stock, ships same day",
+    "tags": [],
+    "features": [
+      "360° rotation",
+      "Carrying pouch included",
+      "Cold shoe mount",
+      "Non-slip feet"
+    ]
+  },
+  {
+    "id": 14,
+    "name": "Portable Charger 20000mAh",
+    "price": 39.99,
+    "inStock": true,
+    "rating": 4.3,
+    "image": "https://images.unsplash.com/photo-1656766109398-452c014c8610?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8UG9ydGFibGUlMjBDaGFyZ2VyJTIwMjAwMDBtQWh8ZW58MHx8MHx8fDA%3D",
+    "description": "High-capacity power bank with fast charging for multiple devices simultaneously.",
+    "specs": {
+      "Capacity": "20000mAh",
+      "Output": "2x USB-A (18W), 1x USB-C (20W)",
+      "Input": "USB-C (18W)",
+      "Weight": "350g",
+      "Charges iPhone": "4-5 times"
+    },
+    "availability": "In stock, ships within 24 hours",
+    "tags": [
+      "Best Seller"
+    ],
+    "features": [
+      "LED power indicator",
+      "Overcharge protection",
+      "Compact design",
+      "Fast charging"
+    ]
+  },
+  {
+    "id": 15,
+    "name": "Bluetooth Speaker",
+    "price": 49.99,
+    "inStock": true,
+    "rating": 4.2,
+    "image": "https://images.unsplash.com/photo-1589256469067-ea99122bbdc4?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Qmx1ZXRvb3RoJTIwU3BlYWtlcnxlbnwwfHwwfHx8MA%3D%3D",
+    "description": "Waterproof portable speaker with rich bass and 12-hour playtime for outdoor adventures.",
+    "specs": {
+      "Waterproof": "IPX7",
+      "Battery Life": "12 hours",
+      "Bluetooth": "5.0",
+      "Driver": "10W",
+      "Weight": "550g"
+    },
+    "availability": "In stock, ships same day",
+    "tags": [
+      "Limited Stock"
+    ],
+    "features": [
+      "Built-in mic",
+      "AUX input",
+      "TF card slot",
+      "Pairing mode"
+    ]
+  },
+  {
+    "id": 16,
+    "name": "LED Desk Lamp",
+    "price": 22.99,
+    "inStock": true,
+    "rating": 4.1,
+    "image": "https://images.unsplash.com/photo-1693329428271-3742bd8220cc?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8TEVEJTIwRGVzayUyMExhbXB8ZW58MHx8MHx8fDA%3D",
+    "description": "Adjustable LED lamp with multiple color temperatures and brightness levels.",
+    "specs": {
+      "LEDs": "48 SMD",
+      "Color Temp": "3000K-6000K",
+      "Brightness": "5 levels",
+      "Power": "USB powered",
+      "Arm": "Flexible gooseneck"
+    },
+    "availability": "In stock, ships within 24 hours",
+    "tags": [],
+    "features": [
+      "Eye-care technology",
+      "Memory function",
+      "Touch control",
+      "Minimalist design"
+    ]
+  }
+]
+}
