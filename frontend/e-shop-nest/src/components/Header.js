@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import { useNavigate, useLocation } from 'react-router-dom';
 import {
   AppBar,
   Toolbar,
@@ -20,13 +20,19 @@ import ExitToAppIcon from '@mui/icons-material/ExitToApp';
 
 const Header = () => {
   const navigate = useNavigate();
+  const location = useLocation();
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
 
-  const [isLoggedIn, setIsLoggedIn] = useState(true);
-  const [showLogout, setShowLogout] = useState(isLoggedIn);
+  const [isLoggedIn, setIsLoggedIn] = useState(!!localStorage.getItem('token'));
   const [mobileMenuAnchor, setMobileMenuAnchor] = useState(null);
   const [searchExpanded, setSearchExpanded] = useState(false);
+
+  useEffect(() => {
+    // Check token on every route change
+    const token = localStorage.getItem('token');
+    setIsLoggedIn(!!token);
+  }, [location.pathname]);
 
   const handleSearch = (e) => {
     if (e.key === 'Enter') {
@@ -36,8 +42,8 @@ const Header = () => {
   };
 
   const handleLogout = () => {
+    localStorage.removeItem('token');
     setIsLoggedIn(false);
-    setShowLogout(false);
     navigate('/');
     handleMobileMenuClose();
   };
@@ -89,13 +95,13 @@ const Header = () => {
             sx={{
               backgroundColor: 'white',
               borderRadius: 1,
-              width: 180, 
+              width: 180,
               mx: 1,
             }}
             InputProps={{
               endAdornment: (
-                <IconButton 
-                  onClick={() => setSearchExpanded(false)} 
+                <IconButton
+                  onClick={() => setSearchExpanded(false)}
                   size="small"
                   sx={{ p: 0 }}
                 >
@@ -108,8 +114,8 @@ const Header = () => {
 
         <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
           {isMobile && !searchExpanded && (
-            <IconButton 
-              color="inherit" 
+            <IconButton
+              color="inherit"
               onClick={toggleSearch}
               size="small"
             >
@@ -128,17 +134,15 @@ const Header = () => {
               >
                 Cart
               </Button>
-              {showLogout && (
-                <Button
-                  variant="contained"
-                  color="error"
-                  startIcon={<ExitToAppIcon />}
-                  onClick={handleLogout}
-                  size="small"
-                >
-                  Logout
-                </Button>
-              )}
+              <Button
+                variant="contained"
+                color="error"
+                startIcon={<ExitToAppIcon />}
+                onClick={handleLogout}
+                size="small"
+              >
+                Logout
+              </Button>
             </>
           )}
 
@@ -160,12 +164,10 @@ const Header = () => {
                   <ShoppingCartIcon sx={{ mr: 1, fontSize: '1rem' }} />
                   <Typography variant="body2">Cart</Typography>
                 </MenuItem>
-                {showLogout && (
-                  <MenuItem onClick={handleLogout}>
-                    <ExitToAppIcon sx={{ mr: 1, fontSize: '1rem' }} />
-                    <Typography variant="body2">Logout</Typography>
-                  </MenuItem>
-                )}
+                <MenuItem onClick={handleLogout}>
+                  <ExitToAppIcon sx={{ mr: 1, fontSize: '1rem' }} />
+                  <Typography variant="body2">Logout</Typography>
+                </MenuItem>
               </Menu>
             </>
           )}
